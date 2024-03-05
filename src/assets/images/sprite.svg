@@ -1,0 +1,22 @@
+<svg width="27.054321" height="28.001953" viewBox="0 0 27.0543 28.002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<g id="logo">
+		<path id="Ellipse 4" d="M27.0543 8.94043C25.6581 5.33911 22.9303 2.64282 19.6512 1.1958C16.119 -0.366699 12.2835 -0.344482 8.94171 0.951172C5.33905 2.34375 2.64276 5.07153 1.19586 8.35083C-0.366821 11.8831 -0.344482 15.7185 0.95105 19.0603C2.34381 22.6628 5.07159 25.3591 8.35071 26.8062C11.883 28.3687 15.7184 28.3464 19.0602 27.0508C22.6629 25.6582 25.3592 22.9304 26.8094 19.6528L14.001 14.001L27.0543 8.94043Z" fill="#D3F85A" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+
+	<g id="clock">
+		<path id="Vector" d="M12 22C6.47998 22 2 17.52 2 12C2 6.47998 6.47998 2 12 2C17.52 2 22 6.47998 22 12C22 17.52 17.52 22 12 22Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M15.71 15.1799L12.61 13.3301C12.07 13.01 11.63 12.24 11.63 11.6101L11.63 7.51001" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<g opacity="0.000000"/>
+	</g>
+
+	<g id="ether">
+		<path id="Vector" d="M11.7 7C11.9 6.8999 12.1 6.8999 12.4 7L17.2 9.1001C17.6 9.30005 18.0001 8.80005 17.7 8.3999L12.7 2.30005C12.4 1.8999 11.8 1.8999 11.5001 2.30005L6.50006 8.3999C6.10004 8.80005 6.50006 9.30005 6.90002 9.1001L11.7 7Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M11.7 17C11.9 17.1001 12.1 17.1001 12.4 17L17.2 14.9001C17.6 14.7 18.0001 15.2 17.7 15.6001L12.7 21.7C12.4 22.1001 11.8 22.1001 11.5001 21.7L6.50006 15.6001C6.10004 15.2 6.50006 14.7 6.90002 14.9001L11.7 17Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M6.79999 12L12 14.5999L17.2 12L12 9.3999L6.79999 12Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<g opacity="0.000000">
+			<path id="Vector" d="M24 0L24 24L0 24L0 0L24 0Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000"/>
+		</g>
+	</g>
+	
+</svg>
