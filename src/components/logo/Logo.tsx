@@ -6,7 +6,7 @@ type LogoPropsType = {
     width?: string;
     height?: string;
     viewBox?: string;
-    fill?: string
+    fill?: string;
 }
 export const Logo = (props: LogoPropsType) => {
   return (
