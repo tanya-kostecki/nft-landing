@@ -5,7 +5,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Paragraph } from '../../../components/Paragraph';
 import { BoldSpan } from '../../../components/BoldSpan';
 import { Button } from '../../../components/button/Button';
-import { Logo } from '../../../components/logo/Logo';
+import { Icon } from "../../../components/icon/Icon";
 
 type CardPropsType = {
     name: string;
@@ -18,7 +18,7 @@ export const Card = (props: CardPropsType) => {
         <FlexWrapper justify='space-between'>
             <Name>{props.name}</Name>
             <FlexWrapper >
-                <Logo iconId='ether' width='24px' height='24px' viewBox='0 0 24 24'/>
+                <Icon iconId='ether' width='24px' height='24px' viewBox='0 0 24 24'/>
                 <Cost>490ETH</Cost>
             </FlexWrapper>
         </FlexWrapper>
@@ -26,7 +26,7 @@ export const Card = (props: CardPropsType) => {
             <div>
                 <Ending>Ending In:</Ending>
                 <FlexWrapper align='center' gap='5px'>
-                    <Logo iconId='clock' width='20px' height='20px' viewBox='0 0 25 25' fill='none'/>
+                    <Icon iconId='clock' width='20px' height='20px' viewBox='0 0 25 25' fill='none'/>
                     <BoldSpan>03:24:56</BoldSpan>
                 </FlexWrapper>
             </div>

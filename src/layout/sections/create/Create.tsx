@@ -8,6 +8,7 @@ import image5 from '../../../assets/images/image5.webp'
 import image6 from '../../../assets/images/image6.webp'
 import { Container } from '../../../components/Container'
 import styled from 'styled-components'
+import { PrimaryColorSpan } from '../../../components/PrimaryColorSpan'
 
 export const Create = () => {
   return (
@@ -15,8 +16,8 @@ export const Create = () => {
         <Container>
             <FlexWrapper justify='space-between' align='center' wrap='wrap'>
                 <StyledLeft>
-                    <SectionTitle>Create And Sell Your Best NFTs</SectionTitle>
-                    <Paragraph>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</Paragraph>
+                    <SectionTitle>Create And Sell Your <PrimaryColorSpan>Best NFTs</PrimaryColorSpan></SectionTitle>
+                    <CreateParagraph>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</CreateParagraph>
                     <div>
                         <Button>Explore Now</Button>
                         <StyledLink>Create Now</StyledLink>
@@ -38,6 +39,9 @@ const StyledCreate = styled.section`
 `
 const StyledLeft = styled.div`
     max-width: 426px;
+`
+const CreateParagraph = styled(Paragraph)`
+    margin-top: 20px;
 `
 const ImageBlock = styled.div`
     display: flex;

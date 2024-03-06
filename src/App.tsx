@@ -5,7 +5,7 @@ import { Art } from './layout/sections/art/Art';
 import { Create } from './layout/sections/create/Create';
 import { Artists } from './layout/sections/artists/Artists';
 import { Subscribe } from './layout/sections/subscribe/Subscribe';
-
+import { Footer } from './layout/footer/Footer';
 
 function App() {
     return (
@@ -16,6 +16,7 @@ function App() {
             <Create/>
             <Artists/>
             <Subscribe/>
+            <Footer/>
         </div>
     );
 }

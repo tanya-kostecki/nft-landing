@@ -20,7 +20,7 @@ export const Subscribe = () => {
                 </ImageContainer>
                 <TextBlock>
                     <SectionTitle>Subscribe And <PrimaryColorSpan>get our Updates</PrimaryColorSpan> Every Week</SectionTitle>
-                    <Paragraph>We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly</Paragraph>
+                    <TextParagraph>We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly</TextParagraph>
                     <SubscribeBlock>
                         <input placeholder='Enter your e-mail'/>
                         <Button>Subscribe</Button>
@@ -52,6 +52,9 @@ const TextBlock = styled.div`
         border: none;
         width: 100%;
     }
+`
+const TextParagraph = styled(Paragraph)`
+    margin-top: 20px;
 `
 const SubscribeBlock = styled.form`
     width: 100%;

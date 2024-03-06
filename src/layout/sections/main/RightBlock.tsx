@@ -5,15 +5,15 @@ import image from '../../../assets/images/image1.webp'
 import { theme } from '../../../styled/Theme'
 import { StyledButton } from '../../../components/button/Button'
 import { BoldSpan } from '../../../components/BoldSpan'
-import { Logo } from '../../../components/logo/Logo'
+import { Icon } from "../../../components/icon/Icon";
 
 export const RightBlock = () => {
   return (
     <StyledRightBlock>
         <Image src={image} alt='main'/>
-        <LogoContainer>
-            <Logo iconId='circle' width='170px' height='170px' viewBox='0 0 170 170'/>
-        </LogoContainer>
+        <IconContainer>
+            <Icon iconId='circle' width='170px' height='170px' viewBox='0 0 170 170'/>
+        </IconContainer>
         <BidBlock>
             <FlexWrapper justify='space-between'>
                 <div>
@@ -44,7 +44,7 @@ const Image = styled.img`
     border-radius: 24px;
 `
 
-const LogoContainer = styled.div`
+const IconContainer = styled.div`
     position: absolute;
     top: 30%;
     left: 0;

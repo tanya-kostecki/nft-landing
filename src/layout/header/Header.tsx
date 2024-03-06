@@ -2,17 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container } from '../../components/Container'
 import { FlexWrapper } from '../../components/FlexWrapper'
-import { Logo } from '../../components/logo/Logo'
 import { Menu } from '../../components/menu/Menu'
 import { Button } from '../../components/button/Button'
 import { theme } from '../../styled/Theme'
+import { Logo } from '../../components/logo/Logo';
 
 export const Header = () => {
   return (
     <StyledHeader>
         <Container>
             <FlexWrapper justify='space-between' align='center'>
-                <Logo iconId='logo' width='30px' height='30px' viewBox='0 0 30 30'/>
+                <Logo/>
                 <Menu/>
                 <Button>Contact</Button>
             </FlexWrapper>
