@@ -42,8 +42,9 @@ const StyledStatistics = styled.div`
     margin-top: 72px;
 `
 const StatisticsElement = styled.div`
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
 
     &:first-child::after,
     &:nth-child(2)::after {
@@ -52,6 +53,9 @@ const StatisticsElement = styled.div`
         height: 100%;
         background-color: ${theme.colors.primary};
         width: 1px;
+        right: -20px;
+        top: 0;
+        position: absolute;
     }
 `
 const StatisticsTitle = styled.div`

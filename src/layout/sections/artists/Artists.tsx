@@ -23,7 +23,7 @@ export const Artists = () => {
     <StyledArtists>
         <Container>
             <FlexWrapper justify='space-between' align='flex-end'>
-                <SectionTitle maxWidth='310px'>Popular <PrimaryColorSpan>Artists</PrimaryColorSpan> On This Week</SectionTitle>
+                <SectionTitle maxWidth='400px'>Popular <PrimaryColorSpan>Artists</PrimaryColorSpan> On This Week</SectionTitle>
                 <Button>See All</Button>
             </FlexWrapper>
 

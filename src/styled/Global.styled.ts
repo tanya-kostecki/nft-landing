@@ -20,12 +20,9 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
-    a:visited {
-        color: ${theme.colors.primary};
-    }
-
     a:hover {
         text-decoration: underline;
+        color: ${theme.colors.primary};
     }
 
     button {
@@ -48,8 +45,6 @@ export const GlobalStyle = createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
-        /* create theme later */
         background-color: ${theme.colors.background};
         color: ${theme.colors.font};
     }

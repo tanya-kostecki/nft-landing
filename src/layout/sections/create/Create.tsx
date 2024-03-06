@@ -47,16 +47,23 @@ const ImageBlock = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 38vw;
+    width: 38vw;
 
     img {
+        position: absolute;
         max-width: 410px;
         max-height: 400px;
+        /* width: 60%; */
+    } 
+    img:nth-of-type(1){
+        top:0;
+        right:0;
     }
 
     img:nth-of-type(2) {
-        position: absolute;
-        right: 80%;
-        top: 30%;
+        left: 0;
+        bottom: 0;
     }
 `
 

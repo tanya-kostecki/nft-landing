@@ -2,15 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 import { Paragraph } from '../../../components/Paragraph';
 
+interface ParagraphItems {
+    url: string;
+    title: string;
+}
+
 type FooterItemPropsType = {
     title: string;
-    paragraphs: string[];
+    paragraphs: ParagraphItems[];
 }
 export const FooterItem = (props: FooterItemPropsType) => {
   return (
     <StyledFooterItem>
         <ItemTitle>{props.title}</ItemTitle>
-        {props.paragraphs.map((paragraph, index) => <ItemSpan as='span' key={index}>{paragraph}</ItemSpan>)}
+        {props.paragraphs.map((paragraph, index) => <ItemSpan as='a' key={index} href={paragraph.url}>{paragraph.title}</ItemSpan>)}
     </StyledFooterItem>
 
   )

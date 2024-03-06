@@ -30,7 +30,10 @@ export const Footer = () => {
             </FooterFlexWrapper>
             <CopywrightFlexWrapper justify='space-between'>
                 <Paragraph as='span'>© Copyright 2023 - Creativeart</Paragraph>
-                <Paragraph as='span'>© Copyright 2023 - Creativeart</Paragraph>
+                <FlexWrapper gap='28px'>
+                    <Paragraph as='a'>Privacy Policy</Paragraph>
+                    <Paragraph as='a'>Terms & Conditions</Paragraph>
+                </FlexWrapper>               
             </CopywrightFlexWrapper>
         </Container>
     </StyledFooter>
@@ -38,7 +41,7 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-    
+    padding-top: 90px;
 `
 const FooterFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 48px;
@@ -78,15 +81,4 @@ const Socials = styled.div`
 const CopywrightFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 92px;
     padding-top: 48px;
-    /* position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        top: 0%;
-        width: 100%;
-        height: 1px;
-        background-color: ${theme.colors.font};
-    } */
 `
