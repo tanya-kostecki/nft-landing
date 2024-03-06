@@ -74,7 +74,9 @@ export const Artists = () => {
   )
 }
 
-const StyledArtists = styled.section``
+const StyledArtists = styled.section`
+  background: radial-gradient(circle at left bottom, #1f413d 0%, #020014 30%);
+`
 const GridItem = styled.div`
   position: relative;
 

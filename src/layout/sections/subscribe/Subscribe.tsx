@@ -32,7 +32,9 @@ export const Subscribe = () => {
   )
 }
 
-const StyledSubscribe = styled.section``
+const StyledSubscribe = styled.section`
+     background: radial-gradient(circle at left top, #1f413d 0%, #020014 30%);
+`
 const ImageContainer = styled.div`
     position: relative;
 
