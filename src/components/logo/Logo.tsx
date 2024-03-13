@@ -2,6 +2,8 @@ import React from 'react'
 import { Icon } from '../icon/Icon'
 import styled from 'styled-components'
 import { PrimaryColorSpan } from '../PrimaryColorSpan'
+import { font } from '../../styled/Common'
+import { theme } from '../../styled/Theme'
 
 export const Logo = () => {
   return (
@@ -16,9 +18,6 @@ const StyledLogo = styled.div`
     display: flex;
 `
 const LogoTitle = styled.h3`
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: 0px;
-    text-align: left;
+  ${font({ family: 'Inter, sans-serif', weight: 500, color: theme.colors.font, Fmax: 32, Fmin: 24 })};
+  text-align: left;
 `

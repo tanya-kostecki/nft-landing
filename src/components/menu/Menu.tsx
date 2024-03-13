@@ -1,28 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexWrapper } from '../FlexWrapper'
+import { theme } from '../../styled/Theme'
 
-export const Menu = () => {
+export const Menu = (props: { menuItems: {title: string, href: string}[] }) => {
   return (
     <StyledMenu>
         <ul>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Collection</a></li>
+            {props.menuItems.map((menuItem, index) => <li key={index}><a href={menuItem.href}>{menuItem.title}</a></li>)}
         </ul>
+        
     </StyledMenu>
   )
 }
 
 const StyledMenu = styled.nav`
-    ul {
-        display: flex;
-        gap: 40px;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: left;
-    }
+  ul {
+      display: flex;
+      gap: 40px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+  }
+
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 
 `
 

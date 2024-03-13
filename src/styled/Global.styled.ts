@@ -52,5 +52,10 @@ export const GlobalStyle = createGlobalStyle`
     section {
         padding-top: 90px;
         padding-bottom: 90px;
+
+        /* @media ${theme.media.mobile} {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        } */
     }
 `

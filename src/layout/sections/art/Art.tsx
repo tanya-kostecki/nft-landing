@@ -25,5 +25,5 @@ export const Art = () => {
 };
 
 const StyledArt = styled.section`
-  background: radial-gradient(circle at right bottom, #1f413d 0%, #020014 50%);
+  background: radial-gradient(circle at right bottom, #1f413d 0%, #020014 40%);
 `;

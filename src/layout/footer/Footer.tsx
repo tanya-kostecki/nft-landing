@@ -13,7 +13,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
         <Container>
-            <FooterFlexWrapper justify='space-between'>
+            <FooterFlexWrapper justify='space-between' wrap='wrap'>
                 <LeftBlock>
                     <Logo/>
                     <LeftParagraph>Discover NFTs by category, track the latest drop, and and follow the collections you love. Enjoy it!</LeftParagraph>
@@ -72,6 +72,7 @@ const LeftParagraph = styled(Paragraph)`
 const RightBlock = styled.div`
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 94px;
 `
 const Socials = styled.div`

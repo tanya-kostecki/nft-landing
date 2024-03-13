@@ -36,7 +36,7 @@ export const Create = () => {
 }
 
 const StyledCreate = styled.section`
-    background: radial-gradient(circle at right top, #1f413d 0%, #020014 50%);
+    background: radial-gradient(circle at right top, #1f413d 0%, #020014 40%);
 `
 const StyledLeft = styled.div`
     max-width: 426px;
