@@ -25,7 +25,7 @@ export const Main = () => {
 const StyledMain = styled.section`
   background: radial-gradient(closest-side, #1F413D, #020014);
   padding-top: 130px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   
 `;
 

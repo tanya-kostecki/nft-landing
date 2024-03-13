@@ -12,8 +12,8 @@ function App() {
         <div className="App">
             <Header/>
             <Main/>
-            {/* <Art/>
-            <Create/>
+            <Art/>
+            {/* <Create/>
             <Artists/>
             <Subscribe/>
             <Footer/> */}

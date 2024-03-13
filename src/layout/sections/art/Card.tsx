@@ -37,11 +37,20 @@ export const Card = (props: CardPropsType) => {
 }
 
 const StyledCard = styled.div`
-    margin-top: 64px;
+    /* margin-top: 64px; */
     padding: 20px;
     border-top: 1px solid ${theme.colors.primary};
     border-radius: 28px;
     background: ${theme.colors.blockBackground};
+
+    max-width: 410px;
+    width: 100%;
+    flex-grow: 1;
+
+    @media ${theme.media.tablet} {
+        /* max-width: 410px;
+        width: 100%; */
+    }
 `
 const Image = styled.img`
     width: 100%;

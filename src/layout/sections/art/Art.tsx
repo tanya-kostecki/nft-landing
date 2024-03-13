@@ -11,12 +11,12 @@ export const Art = () => {
   return (
     <StyledArt>
       <Container>
-        <FlexWrapper justify="space-between" align="flex-end">
+        <FlexWrapper justify="space-between" align="flex-end" marginBottom='64px'>
           <SectionTitle maxWidth="580px">
             <PrimaryColorSpan>Amazing</PrimaryColorSpan> and Super Unique Art of
             This <PrimaryColorSpan>Week</PrimaryColorSpan>
           </SectionTitle>
-          <Button>See All</Button>
+          {/* <Button>See All</Button> */}
         </FlexWrapper>
         <Cards />
       </Container>
