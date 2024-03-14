@@ -10,7 +10,7 @@ export const SectionTitle = styled.h2<SectionTitlePropsType>`
     text-align: left;
     width: ${props => props.maxWidth || '100%'};
 
-    @media screen and (max-width: 1153px) {
+    @media ${theme.media.tablet} {
         text-align: center;
         width: 100%;
     }

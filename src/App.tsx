@@ -13,8 +13,8 @@ function App() {
             <Header/>
             <Main/>
             <Art/>
-            {/* <Create/>
-            <Artists/>
+            <Create/>
+            {/* <Artists/>
             <Subscribe/>
             <Footer/> */}
         </div>
