@@ -48,7 +48,7 @@ const ArtButton = styled(StyledButton)`
   }
 `
 
-const MobileArtButton = styled(StyledButton)`
+export const MobileArtButton = styled(StyledButton)`
   display: none;
 
   @media ${theme.media.tablet} {

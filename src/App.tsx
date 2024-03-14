@@ -14,8 +14,8 @@ function App() {
             <Main/>
             <Art/>
             <Create/>
-            {/* <Artists/>
-            <Subscribe/>
+            <Artists/>
+            {/* <Subscribe/>
             <Footer/> */}
         </div>
     );

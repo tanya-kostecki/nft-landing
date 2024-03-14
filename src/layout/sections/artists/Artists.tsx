@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Container } from '../../../components/Container'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { SectionTitle } from '../../../components/SectionTitle'
-import { Button } from '../../../components/button/Button'
+import { StyledButton } from '../../../components/button/Button'
 import { PrimaryColorSpan } from '../../../components/PrimaryColorSpan'
 import image7 from '../../../assets/images/image7.webp'
 import image8 from '../../../assets/images/image8.webp'
@@ -17,6 +17,8 @@ import avatar3 from '../../../assets/images/avatar3.webp'
 import avatar4 from '../../../assets/images/avatar4.webp'
 import avatar5 from '../../../assets/images/avatar5.webp'
 import { BoldSpan } from '../../../components/BoldSpan'
+import { theme } from '../../../styled/Theme'
+import { MobileArtButton } from '../art/Art'
 
 export const Artists = () => {
   return (
@@ -24,12 +26,12 @@ export const Artists = () => {
         <Container>
             <FlexWrapper justify='space-between' align='flex-end'>
                 <SectionTitle maxWidth='400px'>Popular <PrimaryColorSpan>Artists</PrimaryColorSpan> On This Week</SectionTitle>
-                <Button>See All</Button>
+                <ArtistsButton>See All</ArtistsButton>
             </FlexWrapper>
 
             <GridArtists>
               <GridItem>
-                <img src={image8} alt='#'></img>
+                <GridImg src={image8} alt='#'></GridImg>
                 <div>
                   <img src={avatar1} alt='avatar1'></img>
                   <BoldSpan>Osvaldo Percy</BoldSpan>
@@ -37,7 +39,7 @@ export const Artists = () => {
               </GridItem>
               
               <GridItem>
-                <img src={image10} alt='#'></img>
+                <GridImg src={image10} alt='#'></GridImg>
                 <div>
                   <img src={avatar2} alt='avatar2'></img>
                   <BoldSpan>Ranson Sqiure</BoldSpan>
@@ -45,7 +47,7 @@ export const Artists = () => {
               </GridItem>
 
               <GridItem>
-                <img src={image7} alt='#'></img>
+                <GridImg src={image7} alt='#'></GridImg>
                 <div>
                   <img src={avatar3} alt='avatar3'></img>
                   <BoldSpan>Cristio leo</BoldSpan>
@@ -53,7 +55,7 @@ export const Artists = () => {
               </GridItem>
 
               <GridItem>
-                <img src={image9} alt='#'></img>
+                <GridImg src={image9} alt='#'></GridImg>
                 <div>
                   <img src={avatar4} alt='avatar4'></img>
                   <BoldSpan>Sebastian Waltan</BoldSpan>
@@ -61,7 +63,7 @@ export const Artists = () => {
               </GridItem>
 
               <GridItem>
-                <img src={image11} alt='#'></img>
+                <GridImg src={image11} alt='#'></GridImg>
                 <div>
                   <img src={avatar5} alt='avatar5'></img>
                   <BoldSpan>Abraham Zack</BoldSpan>
@@ -69,6 +71,7 @@ export const Artists = () => {
               </GridItem>
 
           </GridArtists>
+          <MobileArtButton>See All</MobileArtButton>
         </Container>
     </StyledArtists>
   )
@@ -89,6 +92,25 @@ const GridItem = styled.div`
     display: flex;
     gap: 5px;
     align-items: flex-end;
+  }
+
+  @media screen and (max-width: 1275px) {
+    max-width: 343px;
+    max-height: 356px;
+  }
+`
+
+const GridImg = styled.img`
+  @media screen and (max-width: 1275px) {
+    width: 343px;
+    height: 356px;
+    object-fit: cover;
+  }
+`
+
+const ArtistsButton = styled(StyledButton)`
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `
 const GridArtists = styled.div`
@@ -111,6 +133,9 @@ const GridArtists = styled.div`
 
     ${GridItem}:first-child {
       grid-area: one;
+       /* img {
+        width: 100%;
+       } */
     }
     ${GridItem}:nth-child(2) {
       grid-area: two;
@@ -123,5 +148,13 @@ const GridArtists = styled.div`
     }
     ${GridItem}:nth-child(5) {
       grid-area: five;
+    }
+
+    @media screen and (max-width: 1275px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 32px;
     }
 `
