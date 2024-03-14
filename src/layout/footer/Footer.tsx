@@ -42,11 +42,13 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     padding-top: 90px;
+
+    @media ${theme.media.tablet} {
+        padding-top: 40px;
+    }
 `
 const FooterFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 48px;
-    /* margin-left: 18px;
-    margin-right: 18px; */
     position: relative;
 
     &::after {
@@ -59,11 +61,6 @@ const FooterFlexWrapper = styled(FlexWrapper)`
         height: 1px;
         background-color: ${theme.colors.font};
     }
-
-    /* @media ${theme.media.mobile} {
-        margin-left: 0;
-        margin-right: 0%;
-    } */
 `
 const LeftBlock = styled.div`
     display: flex;
@@ -83,7 +80,6 @@ const RightBlock = styled.div`
 
     @media ${theme.media.mobile} {
         flex-direction: column;
-        /* margin-top: 48px; */
         gap: 32px;
     }
 `
@@ -97,7 +93,6 @@ const CopyrightFlexWrapper = styled(FlexWrapper)`
 
     @media ${theme.media.mobile} {
         flex-direction: column;
-        /* padding-bottom: 40px; */
     }
 
     @media ${theme.media.tablet} {

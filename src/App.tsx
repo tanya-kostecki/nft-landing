@@ -15,7 +15,7 @@ function App() {
             <Art/>
             <Create/>
             <Artists/>
-            {/* <Subscribe/> */}
+            <Subscribe/>
             <Footer/>
         </div>
     );

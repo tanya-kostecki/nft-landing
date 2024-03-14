@@ -8,42 +8,79 @@ import { SectionTitle } from '../../../components/SectionTitle'
 import { PrimaryColorSpan } from '../../../components/PrimaryColorSpan'
 import { Paragraph } from '../../../components/Paragraph'
 import { Button, StyledButton } from '../../../components/button/Button'
+import { theme } from "../../../styled/Theme";
 
 export const Subscribe = () => {
   return (
     <StyledSubscribe>
-        <Container>
-            <FlexWrapper justify='space-between' align='center'>
-                <ImageContainer>
-                    <img src={image12} alt=''></img>
-                    <img src={image13} alt=''></img>
-                </ImageContainer>
-                <TextBlock>
-                    <SectionTitle>Subscribe And <PrimaryColorSpan>get our Updates</PrimaryColorSpan> Every Week</SectionTitle>
-                    <TextParagraph>We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly</TextParagraph>
-                    <SubscribeBlock>
-                        <input placeholder='Enter your e-mail'/>
-                        <Button>Subscribe</Button>
-                    </SubscribeBlock>
-                </TextBlock>
-            </FlexWrapper>
-        </Container>
+      <Container>
+        <SubscribeWrapper justify="space-between" align="center">
+          <ImageContainer>
+            <img src={image12} alt=""></img>
+            <img src={image13} alt=""></img>
+          </ImageContainer>
+          <TextBlock>
+            <SectionTitle>
+              Subscribe And <PrimaryColorSpan>get our Updates</PrimaryColorSpan>{" "}
+              Every Week
+            </SectionTitle>
+            <TextParagraph>
+              We have a blog related to NFT so we can share thoughts and
+              routines on our blog which is updated weekly
+            </TextParagraph>
+            <SubscribeBlock>
+              <input placeholder="Enter your e-mail" />
+              <Button>Subscribe</Button>
+            </SubscribeBlock>
+          </TextBlock>
+        </SubscribeWrapper>
+      </Container>
     </StyledSubscribe>
-  )
+  );
 }
 
 const StyledSubscribe = styled.section`
      background: radial-gradient(circle at left top, #1f413d 0%, #020014 30%);
 `
+const SubscribeWrapper = styled(FlexWrapper)`
+  @media screen and (max-width: 1144px) {
+    flex-direction: column-reverse;
+    gap: 48px;
+  }
+`;
 const ImageContainer = styled.div`
-    position: relative;
+  position: relative;
+  height: 458px;
+  
+  img:first-child {
+    //
+    max-width: 410px;
+    max-height: 376px;
+  }
+
+  img:last-child {
+    position: absolute;
+    top: 22%;
+    left: 75%;
+    //
+    max-width: 282px;
+    max-height: 348px;
+  }
+
+  @media ${theme.media.tablet} {
+    width: 343px;
+    height: 250px;
+
+    img:first-child {
+      width: 224px;
+    }
 
     img:last-child {
-        position: absolute;
-        top: 22%;
-        left: 75%;
+      left: 45%;
+      width: 152px;
     }
-`
+  }
+`;
 const TextBlock = styled.div`
     max-width: 520px;
 
@@ -65,5 +102,17 @@ const SubscribeBlock = styled.form`
     ${StyledButton} {
         position: absolute;
         right: 0;
+    }
+
+    @media ${theme.media.mobile} {
+        position: static;
+
+        ${StyledButton} {
+            position: static;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
     }
 `
