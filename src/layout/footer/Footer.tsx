@@ -28,13 +28,13 @@ export const Footer = () => {
                     {items.map((item) => <FooterItem key={item.id} title={item.title} paragraphs={item.paragraphs}/>)}
                 </RightBlock>
             </FooterFlexWrapper>
-            <CopywrightFlexWrapper justify='space-between'>
-                <Paragraph as='span'>© Copyright 2023 - Creativeart</Paragraph>
-                <FlexWrapper gap='28px'>
-                    <Paragraph as='a'>Privacy Policy</Paragraph>
-                    <Paragraph as='a'>Terms & Conditions</Paragraph>
-                </FlexWrapper>               
-            </CopywrightFlexWrapper>
+            <CopyrightFlexWrapper justify='space-between'>
+                <CopyrightSpan as='span'>© Copyright 2023 - Creativeart</CopyrightSpan>
+                <CopyrightWrapper>
+                    <CopyrightLink as='a'>Privacy Policy</CopyrightLink>
+                    <CopyrightLink as='a'>Terms & Conditions</CopyrightLink>
+                </CopyrightWrapper>               
+            </CopyrightFlexWrapper>
         </Container>
     </StyledFooter>
   )
@@ -45,8 +45,8 @@ const StyledFooter = styled.footer`
 `
 const FooterFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 48px;
-    margin-left: 18px;
-    margin-right: 18px;
+    /* margin-left: 18px;
+    margin-right: 18px; */
     position: relative;
 
     &::after {
@@ -59,6 +59,11 @@ const FooterFlexWrapper = styled(FlexWrapper)`
         height: 1px;
         background-color: ${theme.colors.font};
     }
+
+    /* @media ${theme.media.mobile} {
+        margin-left: 0;
+        margin-right: 0%;
+    } */
 `
 const LeftBlock = styled.div`
     display: flex;
@@ -74,12 +79,46 @@ const RightBlock = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 94px;
+    margin-top: 48px;
+
+    @media ${theme.media.mobile} {
+        flex-direction: column;
+        /* margin-top: 48px; */
+        gap: 32px;
+    }
 `
 const Socials = styled.div`
     display: flex;
     gap: 12px;
 `
-const CopywrightFlexWrapper = styled(FlexWrapper)`
+const CopyrightFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 92px;
     padding-top: 48px;
+
+    @media ${theme.media.mobile} {
+        flex-direction: column;
+        /* padding-bottom: 40px; */
+    }
+
+    @media ${theme.media.tablet} {
+        padding-bottom: 40px;
+    }
+`
+
+const CopyrightSpan = styled(Paragraph)`
+    margin-bottom: 16px;
+`
+const CopyrightWrapper = styled(FlexWrapper)`
+    gap: 28px;
+
+    @media ${theme.media.mobile} {
+        gap: 16px;
+        flex-direction: column;
+    }
+`
+
+const CopyrightLink = styled(Paragraph)`
+    @media ${theme.media.mobile} {
+        margin-bottom: 0;
+    }
 `
