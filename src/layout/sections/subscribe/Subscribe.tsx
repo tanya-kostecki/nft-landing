@@ -7,7 +7,7 @@ import image13 from '../../../assets/images/image13.webp'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { PrimaryColorSpan } from '../../../components/PrimaryColorSpan'
 import { Paragraph } from '../../../components/Paragraph'
-import { Button, StyledButton } from '../../../components/button/Button'
+import { StyledButton } from '../../../components/button/Button'
 import { theme } from "../../../styled/Theme";
 
 export const Subscribe = () => {
@@ -30,7 +30,7 @@ export const Subscribe = () => {
             </TextParagraph>
             <SubscribeBlock>
               <input placeholder="Enter your e-mail" />
-              <Button>Subscribe</Button>
+              <StyledButton>Subscribe</StyledButton>
             </SubscribeBlock>
           </TextBlock>
         </SubscribeWrapper>
@@ -53,7 +53,6 @@ const ImageContainer = styled.div`
   height: 458px;
   
   img:first-child {
-    //
     max-width: 410px;
     max-height: 376px;
   }
@@ -62,7 +61,6 @@ const ImageContainer = styled.div`
     position: absolute;
     top: 22%;
     left: 75%;
-    //
     max-width: 282px;
     max-height: 348px;
   }

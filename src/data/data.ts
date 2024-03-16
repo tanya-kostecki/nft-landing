@@ -1,4 +1,6 @@
-// export const menuItems = ['Marketplace', 'Artists', 'Community', 'Collection']
+import image2 from '../assets/images/image2.webp'
+import image3 from '../assets/images/image3.webp'
+import image4 from '../assets/images/image4.webp'
 
 export const menuItems = [
     {
@@ -18,6 +20,22 @@ export const menuItems = [
         href: '#'
     },
 ]
+
+export const cards = [
+    {
+        name: 'Surgeon, Josh Rife',
+        image: image2,
+    },
+    {
+        name: 'Charge, Qi tiao yu',
+        image: image3,
+    },
+    {
+        name: 'Cyberpunk Cocomo',
+        image: image4,
+    },
+]
+
 export const items = [ 
     {   
         id: 1,
@@ -102,6 +120,3 @@ export const items = [
         ]
     },
 ]
-
-// paragraphs:[{url, title}]
-//

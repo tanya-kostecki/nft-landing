@@ -2,7 +2,7 @@ import React from 'react'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { Paragraph } from '../../../components/Paragraph'
-import { Button } from '../../../components/button/Button'
+import { StyledButton } from '../../../components/button/Button'
 import { StyledLink } from '../../../components/StyledLink'
 import image5 from '../../../assets/images/image5.webp'
 import image6 from '../../../assets/images/image6.webp'
@@ -20,7 +20,7 @@ export const Create = () => {
                     <SectionTitle>Create And Sell Your <PrimaryColorSpan>Best NFTs</PrimaryColorSpan></SectionTitle>
                     <CreateParagraph>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</CreateParagraph>
                     <div>
-                        <Button>Explore Now</Button>
+                        <StyledButton>Explore Now</StyledButton>
                         <StyledLink>Create Now</StyledLink>
                     </div>
                 </StyledLeft>
@@ -43,10 +43,6 @@ const StyledCreate = styled.section`
 const CreateWrapper = styled(FlexWrapper)`
     justify-content: space-between;
 
-    /* @media ${theme.media.tablet} {
-        justify-content: center;
-    } */
-
     @media screen and (max-width: 1179px) {
         justify-content: center;
     }
@@ -67,8 +63,6 @@ const ImageBlock = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    /* height: 38vw;
-    width: 38vw; */
     height: 559px;
     width: 740px;
 
@@ -76,8 +70,6 @@ const ImageBlock = styled.div`
         position: absolute;
         max-width: 410px;
         width: 100%;
-        /* max-height: 400px; */
-        /* width: 60%; */
     } 
     img:nth-of-type(1){
         top:0;
@@ -99,8 +91,6 @@ const ImageBlock = styled.div`
         position: absolute;
         max-width: 190px;
         width: 100%;
-        /* max-height: 400px; */
-        /* width: 60%; */
     } 
         img:nth-of-type(1){
             top:0;

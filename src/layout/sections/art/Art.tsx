@@ -31,14 +31,10 @@ const StyledArt = styled.section`
 `;
 const ArtWrapper = styled(FlexWrapper)`
   margin-bottom: 64px;
-
-  //
   justify-content: space-between;
 
   @media screen and (max-width: 1294px) {
     margin-bottom: 32px;
-    //
-    justify-content: center;
   }
 `
 

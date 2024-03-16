@@ -1,18 +1,5 @@
-import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 import { theme } from '../../styled/Theme'
-
-type ButtonPropsType = {
-    children: ReactNode;
-    backgroundColor?: string;
-    height?: string;
-    color?: string;
-}
-export const Button = (props: ButtonPropsType) => {
-  return (
-    <StyledButton backgroundColor={props.backgroundColor} color={props.color}>{props.children}</StyledButton>
-  )
-}
 
 type StyledButtonProps = {
     backgroundColor?: string;

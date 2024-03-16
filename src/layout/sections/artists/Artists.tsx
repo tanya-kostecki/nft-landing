@@ -10,7 +10,6 @@ import image8 from '../../../assets/images/image8.webp'
 import image9 from '../../../assets/images/image9.webp'
 import image10 from '../../../assets/images/image10.webp'
 import image11 from '../../../assets/images/image11.webp'
-
 import avatar1 from '../../../assets/images/avatar1.webp'
 import avatar2 from '../../../assets/images/avatar2.webp'
 import avatar3 from '../../../assets/images/avatar3.webp'
@@ -133,9 +132,6 @@ const GridArtists = styled.div`
 
     ${GridItem}:first-child {
       grid-area: one;
-       /* img {
-        width: 100%;
-       } */
     }
     ${GridItem}:nth-child(2) {
       grid-area: two;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { theme } from "../../../styled/Theme";
-import { Button } from "../../../components/button/Button";
+import { StyledButton } from "../../../components/button/Button";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export const MobileMenu = (props: {
@@ -21,7 +21,7 @@ export const MobileMenu = (props: {
               </li>
             ))}
           </ul>
-          <Button>Contact</Button>
+          <StyledButton>Contact</StyledButton>
         </FlexWrapper>
       </MobileMenuPopup>
     </StyledMobileMenu>

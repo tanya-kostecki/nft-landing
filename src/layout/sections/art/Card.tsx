@@ -4,7 +4,7 @@ import { theme } from '../../../styled/Theme'
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Paragraph } from '../../../components/Paragraph';
 import { BoldSpan } from '../../../components/BoldSpan';
-import { Button } from '../../../components/button/Button';
+import { StyledButton } from '../../../components/button/Button';
 import { Icon } from "../../../components/icon/Icon";
 
 type CardPropsType = {
@@ -30,14 +30,13 @@ export const Card = (props: CardPropsType) => {
                     <BoldSpan>03:24:56</BoldSpan>
                 </FlexWrapper>
             </div>
-            <Button backgroundColor={theme.colors.blockBackground} color={theme.colors.primary}>Place A Bid</Button>
+            <StyledButton backgroundColor={theme.colors.blockBackground} color={theme.colors.primary}>Place A Bid</StyledButton>
         </FlexWrapper>
     </StyledCard>
   )
 }
 
 const StyledCard = styled.div`
-    /* margin-top: 64px; */
     padding: 20px;
     border-top: 1px solid ${theme.colors.primary};
     border-radius: 28px;
@@ -46,11 +45,6 @@ const StyledCard = styled.div`
     max-width: 410px;
     width: 100%;
     flex-grow: 1;
-
-    @media ${theme.media.tablet} {
-        /* max-width: 410px;
-        width: 100%; */
-    }
 `
 const Image = styled.img`
     width: 100%;

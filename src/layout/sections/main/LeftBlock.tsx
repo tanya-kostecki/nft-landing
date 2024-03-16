@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../components/FlexWrapper'
-import { Button } from '../../../components/button/Button'
+import { StyledButton } from '../../../components/button/Button'
 import { Paragraph } from '../../../components/Paragraph'
 import { Statistics } from './Statistics'
 import { PrimaryColorSpan } from '../../../components/PrimaryColorSpan'
@@ -16,7 +16,7 @@ export const LeftBlock = () => {
             <Title>Discover and Collect The Best NFT's <PrimaryColorSpan>Digital Art.</PrimaryColorSpan></Title>
             <LeftParagraph>Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</LeftParagraph>
             <ExploreBlock>
-                <Button>Explore Now</Button>
+                <StyledButton>Explore Now</StyledButton>
                 <StyledLink>Learn more</StyledLink>
             </ExploreBlock>
             <Statistics/>
