@@ -25,16 +25,11 @@ export const Main = () => {
 const StyledMain = styled.section`
   background: radial-gradient(closest-side, #1F413D, #020014);
   padding-top: 130px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
   
 `;
-
-// const MainWrapper = styled(FlexWrapper)`
-//   /* justify-content: space-between; */
-
-//   @media screen and (max-width: 1025px) {
-//     justify-content: center;
-//   }
-// `
 
 
