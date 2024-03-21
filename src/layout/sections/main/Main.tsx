@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Container } from '../../../components/Container'
 import { FlexWrapper } from '../../../components/FlexWrapper'
-import { LeftBlock } from './LeftBlock'
-import { RightBlock } from './RightBlock'
+import { LeftBlock } from "./left-block/LeftBlock";
+import { RightBlock } from "./right-block/RightBlock";
 import styled from 'styled-components'
 import useGetWindowWidth from '../../../hooks/useWindowSize'
 import { theme } from '../../../styled/Theme'
 
-export const Main = () => {
+export const Main: FC = () => {
   const screen = useGetWindowWidth()
   const maxWidth = 1153
   console.log('screenWidth', screen.width)
@@ -24,17 +24,16 @@ export const Main = () => {
 }
 
 const StyledMain = styled.section`
-  background: radial-gradient(closest-side, #1F413D, #020014);
+  background: radial-gradient(closest-side, #1f413d, #020014);
   padding-top: 200px; //130px
   min-height: 100vh;
-  
+
   display: flex;
   align-items: center;
 
   @media ${theme.media.tablet} {
     padding-top: 130px; //130px
   }
-  
 `;
 
 

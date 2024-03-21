@@ -1,58 +1,26 @@
-import React from 'react'
-import { FlexWrapper } from '../../../components/FlexWrapper'
-import { SectionTitle } from '../../../components/SectionTitle'
-import { StyledButton } from '../../../components/button/Button'
-import { Container } from '../../../components/Container'
-import { Cards } from './Cards'
-import { PrimaryColorSpan } from '../../../components/PrimaryColorSpan'
-import styled from "styled-components";
-import { theme } from '../../../styled/Theme'
+import React, { FC } from "react";
+import * as S from './Art.styled'
+import { SectionTitle } from "../../../components/SectionTitle";
+import { Container } from "../../../components/Container";
+import { Cards } from "./cards/Cards";
+import { PrimaryColorSpan } from "../../../components/PrimaryColorSpan";
 
-export const Art = () => {
+export const Art: FC = () => {
   return (
-    <StyledArt>
+    <S.Art>
       <Container>
-        <ArtWrapper justify="space-between" align="flex-end">
+        <S.ArtWrapper justify="space-between" align="flex-end">
           <SectionTitle maxWidth="580px">
             <PrimaryColorSpan>Amazing</PrimaryColorSpan> and Super Unique Art of
             This <PrimaryColorSpan>Week</PrimaryColorSpan>
           </SectionTitle>
-          <ArtButton>See All</ArtButton>
-        </ArtWrapper>
+          <S.ArtButton>See All</S.ArtButton>
+        </S.ArtWrapper>
         <Cards />
-        <MobileArtButton>See All</MobileArtButton>
+        <S.MobileArtButton>See All</S.MobileArtButton>
       </Container>
-    </StyledArt>
+    </S.Art>
   );
 };
 
-const StyledArt = styled.section`
-  background: radial-gradient(circle at right bottom, #1f413d 0%, #020014 40%);
-  padding-top: 55px;
-`;
-const ArtWrapper = styled(FlexWrapper)`
-  margin-bottom: 64px;
-  justify-content: space-between;
 
-  @media screen and (max-width: 1294px) {
-    margin-bottom: 32px;
-  }
-`
-
-const ArtButton = styled(StyledButton)`
-  @media ${theme.media.tablet} {
-    display: none;
-  }
-`
-
-export const MobileArtButton = styled(StyledButton)`
-  display: none;
-
-  @media ${theme.media.tablet} {
-    display: block;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-`
