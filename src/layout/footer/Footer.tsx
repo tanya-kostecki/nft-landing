@@ -12,32 +12,71 @@ import { theme } from '../../styled/Theme'
 export const Footer = () => {
   return (
     <StyledFooter>
-        <Container>
-            <FooterFlexWrapper justify='space-between' wrap='wrap'>
-                <LeftBlock>
-                    <Logo/>
-                    <LeftParagraph>Discover NFTs by category, track the latest drop, and and follow the collections you love. Enjoy it!</LeftParagraph>
-                    <Socials>
-                        <Icon iconId='facebook' width='24px' height='24px' viewBox='0 0 24 24'/>
-                        <Icon iconId='telegram' width='24px' height='24px' viewBox='0 0 24 24'/>
-                        <Icon iconId='twitter' width='24px' height='24px' viewBox='0 0 24 24'/>
-                        <Icon iconId='linkedIn' width='24px' height='24px' viewBox='0 0 24 24'/>
-                    </Socials>
-                </LeftBlock>
-                <RightBlock>
-                    {items.map((item) => <FooterItem key={item.id} title={item.title} paragraphs={item.paragraphs}/>)}
-                </RightBlock>
-            </FooterFlexWrapper>
-            <CopyrightFlexWrapper justify='space-between'>
-                <CopyrightSpan as='span'>© Copyright 2023 - Creativeart</CopyrightSpan>
-                <CopyrightWrapper>
-                    <CopyrightLink as='a'>Privacy Policy</CopyrightLink>
-                    <CopyrightLink as='a'>Terms & Conditions</CopyrightLink>
-                </CopyrightWrapper>               
-            </CopyrightFlexWrapper>
-        </Container>
+      <Container>
+        <FooterFlexWrapper justify="space-between" wrap="wrap">
+          <LeftBlock>
+            <Logo />
+            <LeftParagraph>
+              Discover NFTs by category, track the latest drop, and and follow
+              the collections you love. Enjoy it!
+            </LeftParagraph>
+            <Socials>
+              <SocialLink href="">
+                <Icon
+                  iconId="facebook"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                />
+              </SocialLink>
+              <SocialLink href="">
+                <Icon
+                  iconId="telegram"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                />
+              </SocialLink>
+              <SocialLink href="">
+                <Icon
+                  iconId="twitter"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                />
+              </SocialLink>
+              <SocialLink href="">
+                <Icon
+                  iconId="linkedIn"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                />
+              </SocialLink>
+            </Socials>
+          </LeftBlock>
+          <RightBlock>
+            {items.map((item) => (
+              <FooterItem
+                key={item.id}
+                title={item.title}
+                paragraphs={item.paragraphs}
+              />
+            ))}
+          </RightBlock>
+        </FooterFlexWrapper>
+        <CopyrightFlexWrapper justify="space-between">
+          <CopyrightSpan as="span">
+            © Copyright 2023 - Creativeart
+          </CopyrightSpan>
+          <CopyrightWrapper>
+            <CopyrightLink as="a">Privacy Policy</CopyrightLink>
+            <CopyrightLink as="a">Terms & Conditions</CopyrightLink>
+          </CopyrightWrapper>
+        </CopyrightFlexWrapper>
+      </Container>
     </StyledFooter>
-  )
+  );
 }
 
 const StyledFooter = styled.footer`
@@ -99,6 +138,19 @@ const Socials = styled.div`
     gap: 12px;
     margin-top: 25px;
 `
+
+const SocialLink = styled.a`
+  svg {
+    fill: ${theme.colors.font};
+  }
+
+  &:hover {
+    svg {
+      fill: ${theme.colors.primary};
+    }
+  }
+`;
+
 const CopyrightFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 92px;
     padding-top: 48px;

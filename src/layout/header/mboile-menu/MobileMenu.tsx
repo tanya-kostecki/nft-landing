@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState} from "react";
 import styled, { css } from "styled-components";
 import { theme } from "../../../styled/Theme";
 import { StyledButton } from "../../../components/button/Button";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { StyledLink } from "../../../components/StyledLink";
 
 export const MobileMenu = (props: {
   menuItems: { title: string; href: string }[];
 }) => {
+
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
+
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu)
+  }
+
   return (
     <StyledMobileMenu>
-      <BurgerButton isOpen={false}>
+      <BurgerButton isOpen={showMobileMenu} onClick={toggleMobileMenu}>
         <span></span>
       </BurgerButton>
-      <MobileMenuPopup isOpen={false}>
+      <MobileMenuPopup isOpen={showMobileMenu} onClick={() => setShowMobileMenu(false)}>
         <FlexWrapper direction="column" gap="20px">
           <ul>
             {props.menuItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}>{item.title}</a>
+                <StyledLink href={item.href}>{item.title}</StyledLink>
               </li>
             ))}
           </ul>
@@ -44,14 +52,12 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   z-index: 9999;
   background-color: rgba(4, 31, 49, 0.829);
 
-  display: none;
-  ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    `}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ${theme.animations.transition};
+  transform: translateY(-100%);
+  transition: 0.8s ease-in-out;
 
   ul {
     display: flex;
@@ -61,10 +67,20 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   }
 
   a {
-    font-weight: 500;
-    font-size: 16px;
+    /* font-weight: 500;
+    font-size: 16px; */
     display: inline-block;
   }
+
+  ${(props) =>
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transform: translateY(0);
+    `}
 `;
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;

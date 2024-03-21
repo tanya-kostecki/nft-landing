@@ -1,10 +1,18 @@
 import styled from "styled-components";
+import { theme } from "../styled/Theme";
 
 export const StyledLink = styled.a`
+    font-family: Inter, sans-serif;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 160%;
     text-align: left;
-    margin-left: 36px;
+    
+    transition: ${theme.animations.transition};
+    -webkit-transition: ${theme.animations.transition};
+
+    &:hover {
+        transform: scale(1.2);
+        color: ${theme.colors.primary};
+    }
 `

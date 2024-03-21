@@ -12,22 +12,40 @@ export const GlobalStyle = createGlobalStyle`
 
     ul {
         list-style: none;
+
+    }
+
+    li {
+        transition: ${theme.animations.transition};
+        -webkit-transition: ${theme.animations.transition};
+    }
+
+    li:hover {
+        transform: scale(1.2);
+        color: ${theme.colors.primary};
     }
 
     a {
         color: ${theme.colors.font};
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%;
+        text-align: left;
         text-decoration: none;
         cursor: pointer;
+        transition: ${theme.animations.transition};
+        -webkit-transition: ${theme.animations.transition};
     }
 
     a:hover {
-        text-decoration: underline;
+        transform: scale(1.2);
         color: ${theme.colors.primary};
     }
 
     button {
         cursor: pointer;
-        transition: .3s ease;
+        transition: ${theme.animations.transition};
     }
 
     button:hover {

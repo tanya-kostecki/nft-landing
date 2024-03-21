@@ -29,7 +29,7 @@ const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   z-index: 99;
-  padding: 30px 0;
+  padding: 30px 0 10px;
   background-color: ${theme.colors.background};
 
   @media ${theme.media.tablet} {

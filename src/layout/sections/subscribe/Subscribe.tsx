@@ -54,7 +54,7 @@ const ImageContainer = styled.div`
   //
   max-width: 630px;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   /* justify-content: center; */
 
   img:first-child {
@@ -106,6 +106,10 @@ const SubscribeBlock = styled.form`
     ${StyledButton} {
         position: absolute;
         right: 0;
+    }
+
+    input {
+      color: ${theme.colors.font};
     }
 
     @media ${theme.media.mobile} {

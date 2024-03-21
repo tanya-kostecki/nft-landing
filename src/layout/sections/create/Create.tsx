@@ -3,7 +3,6 @@ import { FlexWrapper } from '../../../components/FlexWrapper'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { Paragraph } from '../../../components/Paragraph'
 import { StyledButton } from '../../../components/button/Button'
-import { StyledLink } from '../../../components/StyledLink'
 import image5 from '../../../assets/images/image5.webp'
 import image6 from '../../../assets/images/image6.webp'
 import { Container } from '../../../components/Container'
@@ -14,26 +13,37 @@ import { theme } from '../../../styled/Theme'
 export const Create = () => {
   return (
     <StyledCreate>
-        <Container>
-            <CreateWrapper align='center' wrap='wrap'>
-                <StyledLeft>
-                    <SectionTitle>Create And Sell Your <PrimaryColorSpan>Best NFTs</PrimaryColorSpan></SectionTitle>
-                    <CreateParagraph>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</CreateParagraph>
-                    <div>
-                        <StyledButton>Explore Now</StyledButton>
-                        <StyledLink>Create Now</StyledLink>
-                    </div>
-                </StyledLeft>
+      <Container>
+        <CreateWrapper align="center" wrap="wrap">
+          <StyledLeft>
+            <SectionTitle>
+              Create And Sell Your{" "}
+              <PrimaryColorSpan>Best NFTs</PrimaryColorSpan>
+            </SectionTitle>
+            <CreateParagraph>
+              Start exploring the world of digital art and NFTs today and take
+              control of your digital assets with confidence!
+            </CreateParagraph>
+            <div>
+              <StyledButton>Explore Now</StyledButton>
+              <StyledButton
+                border="none"
+                color={theme.colors.primary}
+                backgroundColor="transparent"
+              >
+                Create Now
+              </StyledButton>
+            </div>
+          </StyledLeft>
 
-                <ImageBlock>
-                    <img src={image5} alt='first'></img>
-                    <img src={image6} alt='second'></img>
-                </ImageBlock>
-
-            </CreateWrapper>
-        </Container>
+          <ImageBlock>
+            <img src={image5} alt="first"></img>
+            <img src={image6} alt="second"></img>
+          </ImageBlock>
+        </CreateWrapper>
+      </Container>
     </StyledCreate>
-  )
+  );
 }
 
 const StyledCreate = styled.section`

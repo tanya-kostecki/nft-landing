@@ -5,24 +5,36 @@ import { StyledButton } from '../../../components/button/Button'
 import { Paragraph } from '../../../components/Paragraph'
 import { Statistics } from './Statistics'
 import { PrimaryColorSpan } from '../../../components/PrimaryColorSpan'
-import { StyledLink } from '../../../components/StyledLink'
 import { font } from '../../../styled/Common'
 import { theme } from '../../../styled/Theme'
 
 export const LeftBlock = () => {
   return (
     <StyledLeftBlock>
-        <FlexWrapper direction='column' height='100%'>
-            <Title>Discover and Collect The Best NFT's <PrimaryColorSpan>Digital Art.</PrimaryColorSpan></Title>
-            <LeftParagraph>Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</LeftParagraph>
-            <ExploreBlock>
-                <StyledButton>Explore Now</StyledButton>
-                <StyledLink>Learn more</StyledLink>
-            </ExploreBlock>
-            <Statistics/>
-        </FlexWrapper>
+      <FlexWrapper direction="column" height="100%">
+        <Title>
+          Discover and Collect The Best NFT's{" "}
+          <PrimaryColorSpan>Digital Art.</PrimaryColorSpan>
+        </Title>
+        <LeftParagraph>
+          Get started with the easiest and most secure platform to buy and trade
+          digital ART and NFT’s. Start exploring the world of digital art and
+          NFTs today and take control of your digital assets with confidence!
+        </LeftParagraph>
+        <ExploreBlock>
+          <StyledButton>Explore Now</StyledButton>
+          <StyledButton
+            color={theme.colors.primary}
+            backgroundColor="transparent"
+            border="none"
+          >
+            Learn more
+          </StyledButton>
+        </ExploreBlock>
+        <Statistics />
+      </FlexWrapper>
     </StyledLeftBlock>
-  )
+  );
 }
 
 const StyledLeftBlock = styled.div`
