@@ -1,13 +1,16 @@
 import React, { FC } from "react";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Card } from "./Card";
-import { cards } from "../../../../data/data";
+import { ICard } from "../../../../data/data";
 
-export const Cards: FC = () => {
+type CardsPropsType = {
+  cards: ICard[]
+}
+export const Cards: FC<CardsPropsType> = (props) => {
   return (
     <FlexWrapper gap="30px" wrap="wrap" justify="center">
-      {cards.map((card, index) => (
-        <Card key={index} name={card.name} image={card.image} />
+      {props.cards.map((card) => (
+        <Card key={card.id} name={card.name} image={card.image} />
       ))}
     </FlexWrapper>
   );

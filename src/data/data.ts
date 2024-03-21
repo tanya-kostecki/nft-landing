@@ -21,18 +21,42 @@ export const menuItems = [
     },
 ]
 
+export interface ICard {
+    name: string;
+    image: string;
+    id: number;
+}
+
 export const cards = [
     {
         name: 'Surgeon, Josh Rife',
         image: image2,
+        id: 1,
     },
     {
         name: 'Charge, Qi tiao yu',
         image: image3,
+        id: 2,
     },
     {
         name: 'Cyberpunk Cocomo',
         image: image4,
+        id: 3,
+    },
+    {
+        name: 'Surgeon, Josh Rife',
+        image: image2,
+        id: 4,
+    },
+    {
+        name: 'Charge, Qi tiao yu',
+        image: image3,
+        id: 5,
+    },
+    {
+        name: 'Cyberpunk Cocomo',
+        image: image4,
+        id: 6,
     },
 ]
 

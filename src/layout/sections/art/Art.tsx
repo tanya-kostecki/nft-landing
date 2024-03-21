@@ -1,11 +1,18 @@
-import React, { FC } from "react";
-import * as S from './Art.styled'
+import React, { FC, useState } from "react";
+import * as S from "./Art.styled";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { Cards } from "./cards/Cards";
 import { PrimaryColorSpan } from "../../../components/PrimaryColorSpan";
+import { cards } from "../../../data/data";
 
 export const Art: FC = () => {
+  const [allCards, setAllCards] = useState<boolean>(false);
+  const lessCards = cards.slice(3)
+
+  const toggleCards = () => {
+    setAllCards(!allCards);
+  };
   return (
     <S.Art>
       <Container>
@@ -14,13 +21,15 @@ export const Art: FC = () => {
             <PrimaryColorSpan>Amazing</PrimaryColorSpan> and Super Unique Art of
             This <PrimaryColorSpan>Week</PrimaryColorSpan>
           </SectionTitle>
-          <S.ArtButton>See All</S.ArtButton>
+          <S.ArtButton onClick={toggleCards}>
+            {allCards === false ? "See All" : "See Less"}
+          </S.ArtButton>
         </S.ArtWrapper>
-        <Cards />
-        <S.MobileArtButton>See All</S.MobileArtButton>
+        <Cards cards={allCards === false ? lessCards : cards}/>
+        <S.MobileArtButton onClick={toggleCards}>
+          {allCards === false ? "See All" : "See Less"}
+        </S.MobileArtButton>
       </Container>
     </S.Art>
   );
 };
-
-
