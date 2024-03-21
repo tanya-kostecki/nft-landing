@@ -12,7 +12,7 @@ import { theme } from '../../../styled/Theme'
 export const LeftBlock = () => {
   return (
     <StyledLeftBlock>
-        <FlexWrapper direction='column'>
+        <FlexWrapper direction='column' height='100%'>
             <Title>Discover and Collect The Best NFT's <PrimaryColorSpan>Digital Art.</PrimaryColorSpan></Title>
             <LeftParagraph>Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</LeftParagraph>
             <ExploreBlock>
@@ -32,6 +32,7 @@ const Title = styled.h1`
     ${font({ family: 'Montserrat, sans-serif', weight: 500, color: theme.colors.font, Fmax: 64, Fmin: 39 })}
     text-align: left;
     margin-bottom: 20px;
+    margin-top: 20px;
     width: 100%;
 
     @media ${theme.media.mobile} {
@@ -40,6 +41,7 @@ const Title = styled.h1`
 `
 const LeftParagraph = styled(Paragraph)`
     width: 100%;
+    margin-bottom: 45px;
 
     @media ${theme.media.mobile} {
         text-align: center;

@@ -50,6 +50,9 @@ const StyledFooter = styled.footer`
 const FooterFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 48px;
     position: relative;
+    //
+    padding-left: 16px;
+    padding-right: 16px;
 
     &::after {
         content: "";
@@ -65,27 +68,36 @@ const FooterFlexWrapper = styled(FlexWrapper)`
 const LeftBlock = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
+    margin-top: 20px;
     max-width: 272px;
 `
 const LeftParagraph = styled(Paragraph)`
     margin-bottom: 0;
+    margin-top: 5px;
 `
 const RightBlock = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 94px;
-    margin-top: 48px;
+    margin-top: 10px;
+    /* margin-top: 48px; */
+
+    @media ${theme.media.tablet} {
+        margin-top: 48px;
+    }
 
     @media ${theme.media.mobile} {
         flex-direction: column;
         gap: 32px;
+        margin-top: 48px;
     }
 `
 const Socials = styled.div`
     display: flex;
     gap: 12px;
+    margin-top: 25px;
 `
 const CopyrightFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 92px;

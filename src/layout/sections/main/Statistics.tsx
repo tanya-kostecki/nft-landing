@@ -56,6 +56,7 @@ const StatisticsElement = styled.div`
   }
 `;
 const StatisticsTitle = styled.div`
+  margin-bottom: 12px;
   span {
     ${font({
       family: "Montserrat, sans-serif",

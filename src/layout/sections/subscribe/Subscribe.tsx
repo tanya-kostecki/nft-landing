@@ -51,31 +51,37 @@ const SubscribeWrapper = styled(FlexWrapper)`
 const ImageContainer = styled.div`
   position: relative;
   height: 458px;
-  
+  //
+  max-width: 630px;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+
   img:first-child {
     max-width: 410px;
     max-height: 376px;
+    /* transform: translate(8%, 10%) rotate(-11deg); */
   }
 
   img:last-child {
     position: absolute;
-    top: 22%;
-    left: 75%;
+    top: 25%;
+    left: 45%; //85
     max-width: 282px;
     max-height: 348px;
   }
 
   @media ${theme.media.tablet} {
-    width: 343px;
-    height: 250px;
+    max-width: 343px;
+    max-height: 250px;
 
     img:first-child {
-      width: 224px;
+      max-width: 224px;
     }
 
     img:last-child {
       left: 45%;
-      width: 152px;
+      max-width: 152px;
     }
   }
 `;

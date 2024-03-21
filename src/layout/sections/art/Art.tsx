@@ -28,6 +28,7 @@ export const Art = () => {
 
 const StyledArt = styled.section`
   background: radial-gradient(circle at right bottom, #1f413d 0%, #020014 40%);
+  padding-top: 55px;
 `;
 const ArtWrapper = styled(FlexWrapper)`
   margin-bottom: 64px;

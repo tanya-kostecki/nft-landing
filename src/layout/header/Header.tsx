@@ -29,7 +29,7 @@ const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   z-index: 99;
-  padding: 10px 0;
+  padding: 30px 0;
   background-color: ${theme.colors.background};
 
   @media ${theme.media.tablet} {
@@ -37,6 +37,10 @@ const StyledHeader = styled.header`
   }
 `
 const HeaderButton = styled(StyledButton)`
+  /* font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700; */
+
   @media ${theme.media.tablet} {
     display: none;
   }

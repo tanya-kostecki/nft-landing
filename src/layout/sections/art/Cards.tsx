@@ -5,7 +5,7 @@ import { cards } from '../../../data/data'
 
 export const Cards = () => {
   return (
-    <FlexWrapper gap='15px' wrap='wrap' justify='center'>
+    <FlexWrapper gap='30px' wrap='wrap' justify='center'>
         {cards.map((card, index) => <Card key={index} name={card.name} image={card.image}/>)}
     </FlexWrapper>
   )

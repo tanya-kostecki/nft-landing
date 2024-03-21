@@ -43,7 +43,7 @@ const StyledCreate = styled.section`
 const CreateWrapper = styled(FlexWrapper)`
     justify-content: space-between;
 
-    @media screen and (max-width: 1179px) {
+    @media screen and (max-width: 1212px) {
         justify-content: center;
     }
 `
@@ -51,13 +51,14 @@ const CreateWrapper = styled(FlexWrapper)`
 const StyledLeft = styled.div`
     max-width: 426px;
     margin-bottom: 48px;
+    margin-top: 40px;
 
-    @media screen and (min-width: 769px) and (max-width: 1179px) {
+    @media screen and (min-width: 769px) and (max-width: 1212px) {
         max-width: 100%;
     }
 `
 const CreateParagraph = styled(Paragraph)`
-    margin-top: 20px;
+    margin-top: 30px;
 `
 const ImageBlock = styled.div`
     display: flex;

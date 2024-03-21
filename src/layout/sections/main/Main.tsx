@@ -5,6 +5,7 @@ import { LeftBlock } from './LeftBlock'
 import { RightBlock } from './RightBlock'
 import styled from 'styled-components'
 import useGetWindowWidth from '../../../hooks/useWindowSize'
+import { theme } from '../../../styled/Theme'
 
 export const Main = () => {
   const screen = useGetWindowWidth()
@@ -13,7 +14,7 @@ export const Main = () => {
   return (
     <StyledMain>
         <Container>
-            <FlexWrapper wrap='wrap' align='center' justify={screen.width > maxWidth ? 'space-between' : 'center'}>
+            <FlexWrapper wrap='wrap'  justify={screen.width > maxWidth ? 'space-between' : 'center'}>
                 <LeftBlock/>
                 <RightBlock/>
             </FlexWrapper>
@@ -24,11 +25,15 @@ export const Main = () => {
 
 const StyledMain = styled.section`
   background: radial-gradient(closest-side, #1F413D, #020014);
-  padding-top: 130px;
+  padding-top: 200px; //130px
   min-height: 100vh;
   
   display: flex;
   align-items: center;
+
+  @media ${theme.media.tablet} {
+    padding-top: 130px; //130px
+  }
   
 `;
 

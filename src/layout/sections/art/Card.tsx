@@ -15,7 +15,7 @@ export const Card = (props: CardPropsType) => {
   return (
     <StyledCard>
         <Image src={props.image} alt='card' />
-        <FlexWrapper justify='space-between'>
+        <FlexWrapper justify='space-between' marginBottom='18px'>
             <Name>{props.name}</Name>
             <FlexWrapper >
                 <Icon iconId='ether' width='24px' height='24px' viewBox='0 0 24 24'/>
@@ -58,6 +58,7 @@ const Name = styled.span`
 `
 const Cost = styled(Paragraph)`
     font-weight: 700;
+    margin-bottom: 0;
 `
 const Ending = styled.span`
     color: #838382;

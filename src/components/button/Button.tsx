@@ -12,5 +12,8 @@ export const StyledButton = styled.button<StyledButtonProps>`
     border-radius: 8px;
     padding: 12px 40px 12px 40px;
     height: ${props => props.height || '100%'};
-    color: ${props => props.color || theme.colors.blockBackground}
+    color: ${props => props.color || theme.colors.blockBackground};
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 `

@@ -11,9 +11,9 @@ export const RightBlock = () => {
   return (
     <StyledRightBlock>
       <Image src={image} alt="main" />
-      {/* <IconContainer>
+      <IconContainer>
             <Icon iconId='circle' width='170px' height='170px' viewBox='0 0 170 170'/>
-        </IconContainer> */}
+        </IconContainer>
       <BidBlock>
         <FlexWrapper justify='space-between' >
           <div>
@@ -34,7 +34,7 @@ export const RightBlock = () => {
 const StyledRightBlock = styled.div`
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 90px;
+  padding-bottom: 120px; //90px
   position: relative;
 
   @media screen and (max-width: 1137px) {
@@ -48,9 +48,7 @@ const StyledRightBlock = styled.div`
   @media ${theme.media.mobile} {
     width: 100%;
     padding-left: 0;
-    /* padding-top: 32px; */
     padding-right: 20px;
-    //
     display: flex;
     justify-content: center;
   }
@@ -62,19 +60,19 @@ const Image = styled.img`
   border-radius: 24px;
 
   @media ${theme.media.mobile} {
-    /* min-width: 294px;
-    min-height: 344px; */
     width: 100%;
-    //
-
     padding-left: 29px;
   }
 `;
 
 const IconContainer = styled.div`
     position: absolute;
-    top: 30%;
+    top: 34%;
     left: 0;
+
+    @media ${theme.media.tablet} {
+      display: none;
+    }
 `
 const BidBlock = styled.div`
   border-top: 1px solid ${theme.colors.primary};
@@ -85,7 +83,7 @@ const BidBlock = styled.div`
 
   position: absolute;
   /* top: 75%; */
-  bottom: 5%;
+  bottom: 6%;
   right: 0;
   width: 304px;
 
