@@ -7,7 +7,7 @@ import { StyledButton } from "../../components/StyledButton";
 import { theme } from "../../styled/Theme";
 import { Logo } from "../../components/logo/Logo";
 import { menuItems } from "../../data/data";
-import { MobileMenu } from "./mboile-menu/MobileMenu";
+import { MobileMenu } from "./menu/MobileMenu";
 
 export const Header: FC = () => {
   return (

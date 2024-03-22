@@ -10,10 +10,12 @@ export const LeftBlock: FC = () => {
   return (
     <S.LeftBlock>
       <FlexWrapper direction="column" height="100%">
+
         <S.Title>
           Discover and Collect The Best NFT's{" "}
           <PrimaryColorSpan>Digital Art.</PrimaryColorSpan>
         </S.Title>
+
         <S.LeftParagraph>
           Get started with the easiest and most secure platform to buy and trade
           digital ART and NFT’s. Start exploring the world of digital art and

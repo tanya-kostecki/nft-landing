@@ -60,18 +60,7 @@ export const Socials = styled.div`
     gap: 12px;
     margin-top: 25px;
 `
-
-export const SocialLink = styled.a`
-  svg {
-    fill: ${theme.colors.font};
-  }
-
-  &:hover {
-    svg {
-      fill: ${theme.colors.primary};
-    }
-  }
-`;
+export const SocialLink = styled.a``;
 
 export const CopyrightFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 92px;
@@ -85,7 +74,6 @@ export const CopyrightFlexWrapper = styled(FlexWrapper)`
         padding-bottom: 40px;
     }
 `
-
 export const CopyrightSpan = styled(Paragraph)`
     margin-bottom: 16px;
 `
@@ -97,7 +85,6 @@ export const CopyrightWrapper = styled(FlexWrapper)`
         flex-direction: column;
     }
 `
-
 export const CopyrightLink = styled(Paragraph)`
     @media ${theme.media.mobile} {
         margin-bottom: 0;
