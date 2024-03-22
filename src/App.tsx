@@ -6,6 +6,7 @@ import { Create } from './layout/sections/create/Create';
 import { Artists } from './layout/sections/artists/Artists';
 import { Subscribe } from './layout/sections/subscribe/Subscribe';
 import { Footer } from './layout/footer/Footer';
+import { GoTopBtn } from './components/go-to-top/GoTopBtn';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <Artists/>
             <Subscribe/>
             <Footer/>
+            <GoTopBtn/>
         </div>
     );
 }
