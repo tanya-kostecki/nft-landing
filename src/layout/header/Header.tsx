@@ -6,7 +6,6 @@ import { Menu } from "./menu/Menu";
 import { StyledButton } from "../../components/StyledButton";
 import { theme } from "../../styled/Theme";
 import { Logo } from "../../components/logo/Logo";
-import { menuItems } from "../../data/data";
 import { MobileMenu } from "./menu/MobileMenu";
 
 export const Header: FC = () => {
@@ -15,8 +14,8 @@ export const Header: FC = () => {
       <Container>
         <FlexWrapper justify="space-between" align="center">
           <Logo />
-          <Menu menuItems={menuItems} />
-          <MobileMenu menuItems={menuItems} />
+          <Menu/>
+          <MobileMenu/>
           <HeaderButton>Contact</HeaderButton>
         </FlexWrapper>
       </Container>

@@ -5,20 +5,22 @@ import image4 from '../assets/images/image4.webp'
 export const menuItems = [
     {
         title: 'Marketplace',
-        href: '#'
-    },
-    {
-        title: 'Artists',
-        href: '#'
-    },
-    {
-        title: 'Community',
-        href: '#'
+        href: '#marketplace'
     },
     {
         title: 'Collection',
-        href: '#'
+        href: '#collection'
     },
+    {
+        title: 'Community',
+        href: '#community'
+    },
+    {
+        title: 'Artists',
+        href: '#artists'
+    },
+    
+    
 ]
 
 export interface ICard {

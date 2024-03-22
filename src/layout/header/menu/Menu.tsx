@@ -1,25 +1,11 @@
 import React, { FC } from "react";
 import * as S from './MobileMenu.styled'
+import { MenuItem } from "./menu-item/MenuItem";
 
-export const Menu: FC<{
-  menuItems: { title: string; href: string }[];
-}> = (props) => {
+export const Menu: FC = () => {
   return (
     <S.Menu>
-      <ul>
-        {props.menuItems.map((menuItem, index) => (
-          <S.LinkItem key={index}>
-            <a href={menuItem.href}>{menuItem.title}
-              <S.Mask>
-                <span>{menuItem.title}</span>
-              </S.Mask>
-              <S.Mask>
-                <span>{menuItem.title}</span>
-              </S.Mask>
-            </a>
-          </S.LinkItem>
-        ))}
-      </ul>
+      <MenuItem/>
     </S.Menu>
   );
 };
