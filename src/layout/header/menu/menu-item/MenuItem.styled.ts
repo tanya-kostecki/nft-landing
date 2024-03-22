@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../../../styled/Theme";
+import { Link } from "react-scroll";
+import { StyledLink } from "../../../../components/StyledLink";
 
 export const Mask = styled.span`
   position: absolute;
@@ -21,6 +23,10 @@ export const Mask = styled.span`
 
 export const LinkItem = styled.li`
   position: relative;
+`;
+
+export const NavLink = styled(Link)`
+  ${StyledLink};
 
   &::before {
     content: "";
@@ -36,9 +42,9 @@ export const LinkItem = styled.li`
     transform: scale(0);
   }
 
-  &:hover {
+  &:hover, &.active {
     &::before {
-      transform: scale(1);
+      transform: scale(1.0);
     }
 
     ${Mask} {

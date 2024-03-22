@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import * as S from "./Create.styled";
 import { SectionTitle } from '../../../components/SectionTitle'
 import { StyledButton } from "../../../components/StyledButton";
@@ -8,9 +8,9 @@ import { Container } from "../../../components/Container";
 import { PrimaryColorSpan } from "../../../components/PrimaryColorSpan";
 import { theme } from "../../../styled/Theme";
 
-export const Create = () => {
+export const Create: FC = () => {
   return (
-    <S.Create>
+    <S.Create id='community'>
       <Container>
         <S.CreateWrapper align="center" wrap="wrap">
           <S.StyledLeft>

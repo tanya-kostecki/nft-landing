@@ -12,7 +12,7 @@ export const Main: FC = () => {
   const maxWidth = 1153
   console.log('screenWidth', screen.width)
   return (
-    <StyledMain>
+    <StyledMain id='marketplace'>
         <Container>
             <FlexWrapper wrap='wrap'  justify={screen.width > maxWidth ? 'space-between' : 'center'}>
                 <LeftBlock/>

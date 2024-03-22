@@ -14,7 +14,7 @@ export const Art: FC = () => {
     setAllCards(!allCards);
   };
   return (
-    <S.Art>
+    <S.Art id="collection">
       <Container>
         <S.ArtWrapper justify="space-between" align="flex-end">
           <SectionTitle maxWidth="580px">

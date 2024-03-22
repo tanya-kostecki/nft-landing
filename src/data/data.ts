@@ -5,19 +5,23 @@ import image4 from '../assets/images/image4.webp'
 export const menuItems = [
     {
         title: 'Marketplace',
-        href: '#marketplace'
+        href: 'marketplace',
+        id: 1
     },
     {
         title: 'Collection',
-        href: '#collection'
+        href: 'collection',
+        id: 2
     },
     {
         title: 'Community',
-        href: '#community'
+        href: 'community',
+        id: 3
     },
     {
         title: 'Artists',
-        href: '#artists'
+        href: 'artists',
+        id: 4
     },
     
     

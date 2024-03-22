@@ -1,14 +1,18 @@
 import React, { FC } from "react";
 import * as S from "./MenuItem.styled";
-import { StyledLink } from "../../../../components/StyledLink";
 import { menuItems } from "../../../../data/data";
 
 export const MenuItem: FC = () => {
   return (
     <ul>
-      {menuItems.map((menuItem, index) => (
-        <S.LinkItem key={index}>
-          <StyledLink href={menuItem.href}>
+      {menuItems.map((menuItem) => (
+        <S.LinkItem key={menuItem.id}>
+          <S.NavLink
+            to={menuItem.href}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+          >
             {menuItem.title}
             <S.Mask>
               <span>{menuItem.title}</span>
@@ -16,7 +20,7 @@ export const MenuItem: FC = () => {
             <S.Mask>
               <span>{menuItem.title}</span>
             </S.Mask>
-          </StyledLink>
+          </S.NavLink>
         </S.LinkItem>
       ))}
     </ul>

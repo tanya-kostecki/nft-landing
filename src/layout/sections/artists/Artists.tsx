@@ -19,7 +19,7 @@ import { MobileArtButton } from "../art/Art.styled";
 
 export const Artists: FC = () => {
   return (
-    <S.Artists>
+    <S.Artists id="artists">
       <Container>
         <FlexWrapper justify="space-between" align="flex-end">
           <SectionTitle maxWidth="400px">
