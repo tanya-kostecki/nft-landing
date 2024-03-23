@@ -17,4 +17,8 @@ export const StyledButton = styled.button<StyledButtonProps>`
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
+
+  @media ${theme.media.mobile} {
+    padding: 12px 20px 12px 20px;
+  }
 `;

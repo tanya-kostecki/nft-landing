@@ -4,6 +4,7 @@ import { theme } from "../../../styled/Theme";
 
 export const Artists = styled.section`
   background: radial-gradient(circle at left bottom, #1f413d 0%, #020014 30%);
+  position: relative;
 `
 export const GridItem = styled.div`
   position: relative;

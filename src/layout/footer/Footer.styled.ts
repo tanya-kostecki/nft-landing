@@ -5,6 +5,8 @@ import { Paragraph } from "../../components/Paragraph";
 
 export const Footer = styled.footer`
     padding-top: 90px;
+    position: relative;
+    background-color: ${theme.colors.background};
 
     @media ${theme.media.tablet} {
         padding-top: 40px;

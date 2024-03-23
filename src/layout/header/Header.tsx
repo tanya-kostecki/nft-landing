@@ -27,7 +27,7 @@ const StyledHeader = styled.header`
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 999999999;
   padding: 30px 0 10px;
   background-color: ${theme.colors.background};
 

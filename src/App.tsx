@@ -7,10 +7,13 @@ import { Artists } from './layout/sections/artists/Artists';
 import { Subscribe } from './layout/sections/subscribe/Subscribe';
 import { Footer } from './layout/footer/Footer';
 import { GoTopBtn } from './components/go-to-top/GoTopBtn';
+import { BackgroundParticle } from './components/particle/Particle';
+
 
 function App() {
     return (
         <div className="App">
+            <BackgroundParticle/>
             <Header/>
             <Main/>
             <Art/>

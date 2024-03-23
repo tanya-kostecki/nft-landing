@@ -27,6 +27,8 @@ const StyledMain = styled.section`
   background: radial-gradient(closest-side, #1f413d, #020014);
   padding-top: 200px; //130px
   min-height: 100vh;
+  z-index: 999999;
+  position: relative;
 
   display: flex;
   align-items: center;
