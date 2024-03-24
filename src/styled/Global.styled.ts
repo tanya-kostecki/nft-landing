@@ -39,7 +39,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a:hover {
-        transform: scale(1.2);
         color: ${theme.colors.primary};
     }
 
