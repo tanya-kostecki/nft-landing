@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nft-landing/static/css/main.31d6cfe0.css",
-    "main.js": "/nft-landing/static/js/main.c2909be1.js",
+    "main.js": "/nft-landing/static/js/main.e49ba1b7.js",
     "static/js/607.d0b75688.chunk.js": "/nft-landing/static/js/607.d0b75688.chunk.js",
     "static/js/7418.379a8e2b.chunk.js": "/nft-landing/static/js/7418.379a8e2b.chunk.js",
     "static/js/5.fe2483fc.chunk.js": "/nft-landing/static/js/5.fe2483fc.chunk.js",
@@ -91,7 +91,7 @@
     "static/media/avatar3.webp": "/nft-landing/static/media/avatar3.00c1755bedb4193861e6.webp",
     "static/media/avatar1.webp": "/nft-landing/static/media/avatar1.0328e19863dc34cdcfb4.webp",
     "index.html": "/nft-landing/index.html",
-    "main.c2909be1.js.map": "/nft-landing/static/js/main.c2909be1.js.map",
+    "main.e49ba1b7.js.map": "/nft-landing/static/js/main.e49ba1b7.js.map",
     "607.d0b75688.chunk.js.map": "/nft-landing/static/js/607.d0b75688.chunk.js.map",
     "7418.379a8e2b.chunk.js.map": "/nft-landing/static/js/7418.379a8e2b.chunk.js.map",
     "5.fe2483fc.chunk.js.map": "/nft-landing/static/js/5.fe2483fc.chunk.js.map",
@@ -164,6 +164,6 @@
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.c2909be1.js"
+    "static/js/main.e49ba1b7.js"
   ]
 }
